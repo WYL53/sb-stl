@@ -8,6 +8,7 @@ using namespace std;
 #include "sb_defalloc.h"
 #include "sb_construct.h"
 #include "sb_algo.h"
+
 class test {
 public:
     test(int i) {
@@ -19,8 +20,8 @@ public:
     ~test() {
         cout << "shit" << endl;
     }
-
 };
+
 int main(void)
 {
     vector<int> v;

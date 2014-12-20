@@ -48,5 +48,5 @@ namespace sb
 
     };
 
-};
+}
 #endif

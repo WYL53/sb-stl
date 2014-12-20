@@ -21,6 +21,6 @@ namespace sb {
     {
         pointer->~Type();
     }
-};
+}
 
 #endif
