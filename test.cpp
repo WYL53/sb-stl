@@ -9,28 +9,47 @@ using namespace std;
 #include "sb_construct.h"
 #include "sb_algo.h"
 
-class test {
-public:
-    test(int i) {
-        cout << i << endl;
+char* test(int v)
+{
+    switch (v) {
+    case 1:
+        return "windows";
+    case 2:
+        return "linux";
+    case 3:
+        return "freebsd";
     }
-    test() {
-        cout << "Hello world" << endl;
+}
+
+std::function<char* ()> get_os_func(int v) {
+    switch (v) {
+    case 1:
+        return [] () -> char * {
+          return "windows";
+        };
+    case 2:
+        return [] () -> char *{
+            return "linux";
+        };
+    case 3:
+        return [] () -> char* {
+            return "freebsd";
+        };
     }
-    ~test() {
-        cout << "shit" << endl;
-    }
-};
+}
 
 int main(void)
 {
-    vector<int> v;
+    /*
+    auto func = get_os_func(1);
 
-    for (int i = 0; i < 10; i++) {
-        v.push_back(i);
-    }
+    std::cout << func() << std::endl;
+    */
 
-    auto i = sb::find(v.begin(), v.end(), 5);
-    cout << *i << endl;
+
+    char str[] = "HelloWorld";
+    sb::fill(str, &str[strlen(str)-1], 'a');
+
+
     return 0;
 }

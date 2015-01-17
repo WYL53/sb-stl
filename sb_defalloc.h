@@ -1,6 +1,6 @@
 
 #ifndef _SB_DEFALLOC_H_
-#define _SB_DEFALLOC_H
+#define _SB_DEFALLOC_H_
 
 #include "sb_config.h"
 #include "sb_types.h"
