@@ -7,6 +7,7 @@
     <ClInclude Include="..\sb_construct.h" />
     <ClInclude Include="..\sb_memory.h" />
     <ClInclude Include="..\sb_algo.h" />
+    <ClInclude Include="..\sb_alloc.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\test.cpp" />

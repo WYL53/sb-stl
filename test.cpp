@@ -30,7 +30,10 @@ int main(void)
         v.push_back(i);
     }
 
-    auto i = sb::find(v.begin(), v.end(), 5);
-    cout << *i << endl;
+    auto it = v.begin();
+    std::advance(it, 5);
+
+    std::cout << *it << std::endl;
+
     return 0;
 }
