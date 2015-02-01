@@ -1,0 +1,19 @@
+﻿  test.cpp
+d:\projects\sb-stl\sb_iterator.h(127): error C2665: 'sb::__distance__' : none of the 2 overloads could convert all the argument types
+          d:\projects\sb-stl\sb_iterator.h(119): could be '__w64 int sb::__distance__<InputIterator>(RandomAccessIterator,RandomAccessIterator,sb::random_access_iterator_tag)'
+          with
+          [
+              InputIterator=std::_Vector_iterator<std::_Vector_val<std::_Simple_types<int>>>
+  ,            RandomAccessIterator=std::_Vector_iterator<std::_Vector_val<std::_Simple_types<int>>>
+          ]
+          d:\projects\sb-stl\sb_iterator.h(109): or       '__w64 int sb::__distance__<InputIterator>(InputIterator,InputIterator,sb::input_iterator_tag)'
+          with
+          [
+              InputIterator=std::_Vector_iterator<std::_Vector_val<std::_Simple_types<int>>>
+          ]
+          while trying to match the argument list '(std::_Vector_iterator<std::_Vector_val<std::_Simple_types<int>>>, std::_Vector_iterator<std::_Vector_val<std::_Simple_types<int>>>, std::random_access_iterator_tag)'
+          d:\projects\sb-stl\test.cpp(11) : see reference to function template instantiation '__w64 int sb::distance<std::_Vector_iterator<std::_Vector_val<std::_Simple_types<int>>>>(InputIterator,InputIterator)' being compiled
+          with
+          [
+              InputIterator=std::_Vector_iterator<std::_Vector_val<std::_Simple_types<int>>>
+          ]

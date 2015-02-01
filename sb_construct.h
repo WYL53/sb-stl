@@ -4,19 +4,19 @@
 
 namespace sb {
 
-    template <class Type>
+    template <typename Type>
     inline void construct(Type *pointer)
     {
         new (pointer)Type();
     }
 
-    template <class Type, class Value>
+    template <typename Type, typename Value>
     inline void construct(Type *pointer, const Value& value) 
     {
         new (pointer) Type(value);
     }
 
-    template <class Type>
+    template <typename Type>
     inline void destroy(Type *pointer)
     {
         pointer->~Type();
