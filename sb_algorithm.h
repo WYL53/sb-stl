@@ -2,7 +2,7 @@
 #ifndef _SB_ALGO_H_
 #define _SB_ALGO_H_
 
-#include <string.h>
+#include "sb_config.h"
 
 namespace sb {
     template <class InputIterator, class Type>

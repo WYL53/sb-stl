@@ -3,7 +3,7 @@
 #ifndef _SB_ITERATOR_H_
 #define _SB_ITERATOR_H_
 
-#include "sb_types.h"
+#include "sb_config.h"
 
 namespace sb {
     class input_iterator_tag {};
