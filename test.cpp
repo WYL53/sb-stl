@@ -5,13 +5,17 @@
 #include <memory>
 #include <tuple>
 #include <malloc.h>
+#include <list>
+#include <vector>
+
 #include "sb_iterator.h"
 #include "sb_memory.h"
 #include "sb_exception.h"
-
+#include "sb_vector.h"
 using namespace sb;
 #include <typeinfo>
 
+/*
 struct S { // The type has to be polymorphic
     S()
     {
@@ -53,7 +57,6 @@ public:
     virtual void foo() {
         std::cout << "C :: foo" << std::endl;
     }
-
     virtual void bar() {
         std::cout << "C :: bar" << std::endl;
     }
@@ -65,8 +68,20 @@ int main(void)
     C * c = new C();
 
     void *p = (void*)c;
-    A *a = (A*)p;
-    a->foo();
+    B *a = (B*)p;
+    a->bar();
+
+
+    return 0;
+}*/
+
+
+
+int main(void)
+{
+    vector<int> v;
+
+    //v.push_back(1);
 
 
     return 0;
